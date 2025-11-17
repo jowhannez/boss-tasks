@@ -286,7 +286,7 @@ body {
 .generator-container {
   background-color: var(--bg-primary);
   color: var(--text-dark);
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto', sans-serif;
   padding: 40px 20px;
   min-height: 100vh;
 }

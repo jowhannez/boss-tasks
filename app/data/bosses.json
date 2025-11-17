@@ -47,59 +47,46 @@
             },
             {
                 "id": 9,
-                "name": "Blood Moon",
-                "image": "/images/Blood_Moon.png",
-                "weight": 0.333
+                "name": "Moons of Peril",
+                "image": "/images/Blood_Moon.png"
             },
             {
                 "id": 10,
-                "name": "Blue Moon",
-                "image": "/images/Blue_Moon.png",
-                "weight": 0.333
-            },
-            {
-                "id": 11,   
-                "name": "Eclipse Moon",
-                "image": "/images/Eclipse_Moon.png",
-                "weight": 0.333
-            },
-            {
-                "id": 12,
                 "name": "Kalphite Queen",
                 "image": "/images/Kalphite_Queen.png"
             },
             {
-                "id": 13,
+                "id": 11,
                 "name": "Kree'arra",
                 "image": "/images/Kree'arra.png"
             },
             {
-                "id": 14,
+                "id": 12,
                 "name": "Commander Zilyana",
                 "image": "/images/Commander_Zilyana.png"
             },
             {
-                "id": 15,
+                "id": 13,
                 "name": "General Graardor",
                 "image": "/images/General_Graardor.png"
             },
             {
-                "id": 16,
+                "id": 14,
                 "name": "K'ril Tsutsaroth",
                 "image": "/images/K'ril_Tsutsaroth.png"
             },
             {
-                "id": 17,
+                "id": 15,
                 "name": "The Hueycoatl",
                 "image": "/images/The_Hueycoatl.png"
             },
             {
-                "id": 18,
+                "id": 16,
                 "name": "Corporeal Beast",
                 "image": "/images/Corporeal_Beast.png"
             },
             {
-                "id": 19,
+                "id": 17,
                 "name": "Nex",
                 "image": "/images/Nex.png"
             }
@@ -109,42 +96,42 @@
         "category": "Wilderness bosses",
         "bosses": [
             {
-                "id": 20,
+                "id": 18,
                 "name": "Chaos Fanatic",
                 "image": "/images/Chaos_Fanatic.png"
             },
             {
-                "id": 21,
+                "id": 19,
                 "name": "Crazy Archaeologist",
                 "image": "/images/Crazy_archaeologist.png"
             },
             {
-                "id": 22,
+                "id": 20,
                 "name": "Scorpia",
                 "image": "/images/Scorpia.png"
             },
             {
-                "id": 23,
+                "id": 21,
                 "name": "King Black Dragon",
                 "image": "/images/King_Black_Dragon.png"
             },
             {
-                "id": 24,
+                "id": 22,
                 "name": "Chaos Elemental",
                 "image": "/images/Chaos_Elemental.png"
             },
             {
-                "id": 25,
+                "id": 23,
                 "name": "Calvar'ion / Vet'ion",
                 "image": "/images/Calvar'ion.png"
             },
             {
-                "id": 26,
+                "id": 24,
                 "name": "Spindel / Venenatis",
                 "image": "/images/Spindel.png"
             },
             {
-                "id": 27,
+                "id": 25,
                 "name": "Artio / Callisto",
                 "image": "/images/Artio.png"
             }
@@ -154,32 +141,32 @@
         "category": "Instanced bosses",
         "bosses": [
             {
-                "id": 28,
+                "id": 26,
                 "name": "Obor",
                 "image": "/images/Obor.png"
             },
             {
-                "id": 29,
+                "id": 27,
                 "name": "Bryophyta",
                 "image": "/images/Bryophyta.png"
             },
             {
-                "id": 30,
+                "id": 28,
                 "name": "Amoxliatl",
                 "image": "/images/Amoxliatl.png"
             },
             {
-                "id": 31,
+                "id": 29,
                 "name": "Royal Titans",
                 "image": "/images/Branda_the_Fire_Queen.png"
             },
             {
-                "id": 32,
+                "id": 30,
                 "name": "Doom of Mokhaiotl",
                 "image": "/images/Doom_of_Mokhaiotl.png"
             },
             {
-                "id": 32,
+                "id": 31,
                 "name": "Zulrah",
                 "image": "/images/Zulrah.png"
             },
@@ -189,17 +176,17 @@
                 "image": "/images/Vorkath.png"
             },
             {
-                "id": 32,
+                "id": 33,
                 "name": "Phantom Muspah",
                 "image": "/images/Phantom_Muspah.png"
             },
             {
-                "id": 32,
+                "id": 34,
                 "name": "The Nightmare / Phosani's Nightmare",
                 "image": "/images/The_Nightmare.png"
             },
             {
-                "id": 32,
+                "id": 35,
                 "name": "Yama",
                 "image": "/images/Yama.png"
             }
@@ -209,22 +196,22 @@
         "category": "The Forgotten Four",
         "bosses": [
             {
-                "id": 33,
+                "id": 36,
                 "name": "Duke Sucellus",
                 "image": "/images/Duke_Sucellus.png"
             },
             {
-                "id": 34,
+                "id": 37,
                 "name": "The Leviathan",
                 "image": "/images/The_Leviathan.png"
             },
             {
-                "id": 35,
+                "id": 38,
                 "name": "The Whisperer",
                 "image": "/images/The_Whisperer.png"
             },
             {
-                "id": 36,
+                "id": 39,
                 "name": "Vardorvis",
                 "image": "/images/Vardorvis.png"
             }
@@ -234,37 +221,37 @@
         "category": "Slayer bosses",
         "bosses": [
             {
-                "id": 37,
+                "id": 40,
                 "name": "Grotesque Guardians",
                 "image": "/images/Dawn.png"
             },
             {
-                "id": 38,
+                "id": 41,
                 "name": "Abyssal Sire",
                 "image": "/images/Abyssal_Sire.png"
             },
             {
-                "id": 39,
+                "id": 42,
                 "name": "Kraken",
                 "image": "/images/Cave_kraken.png"
             },
             {
-                "id": 40,
+                "id": 43,
                 "name": "Cerberus",
                 "image": "/images/Cerberus.png"
             },
             {
-                "id": 41,
+                "id": 44,
                 "name": "Araxxor",
                 "image": "/images/Araxxor.png"
             },
             {
-                "id": 42,
+                "id": 45,
                 "name": "Thermonuclear smoke devil",
                 "image": "/images/Thermonuclear_Smoke_Devil.png"
             },
             {
-                "id": 43,
+                "id": 46,
                 "name": "Alchemical Hydra",
                 "image": "/images/Alchemical_Hydra.png"
             }
@@ -274,24 +261,24 @@
         "category": "Minigame bosses",
         "bosses": [
             {
-                "id": 44,
+                "id": 47,
                 "name": "The Gauntlet",
                 "image": "/images/Corrupted_Hunllef.png"
             },
             {
-                "id": 45,
+                "id": 48,
                 "name": "TzTok-Jad",
                 "image": "/images/TzTok-Jad.png",
                 "max": 1
             },
             {
-                "id": 46,
+                "id": 49,
                 "name": "TzKal-Zuk",
                 "image": "/images/TzKal-Zuk.png",
                 "max": 1
             },
             {
-                "id": 47,
+                "id": 50,
                 "name": "Sol Heredit",
                 "image": "/images/Sol_Heredit.png",
                 "max": 1
@@ -302,17 +289,17 @@
         "category": "Skilling bosses",
         "bosses": [
             {
-                "id": 48,
+                "id": 51,
                 "name": "Tempoross",
                 "image": "/images/Tempoross.png"
             },
             {
-                "id": 49,
+                "id": 52,
                 "name": "Wintertodt",
                 "image": "/images/Wintertodt.gif"
             },
             {
-                "id": 50,
+                "id": 53,
                 "name": "Zalcano",
                 "image": "/images/Zalcano.png"
             }
@@ -322,19 +309,19 @@
         "category": "Raids",
         "bosses": [
             {
-                "id": 51,
+                "id": 54,
                 "name": "Chambers of Xeric",
                 "image": "/images/Great_olm.png",
                 "max": 1
             },
             {
-                "id": 52,
+                "id": 55,
                 "name": "Theatre of Blood",
                 "image": "/images/Verzik_Vitur.png",
                 "max": 1
             },
             {
-                "id": 53,
+                "id": 56,
                 "name": "Tombs of Amascut",
                 "image": "/images/Tumeken's_Warden.png",
                 "max": 1
