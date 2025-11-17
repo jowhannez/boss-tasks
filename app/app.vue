@@ -60,6 +60,11 @@ function generateTask() {
   const effectiveMax = Math.min(max, maxAmount.value);
   const min = minAmount.value > effectiveMax ? effectiveMax : minAmount.value;
 
+  if (randomBoss.id === currentTask.value?.boss.id) {
+    // Prevent same boss consecutively
+    return generateTask();
+  }
+
   currentTask.value = {
     boss: randomBoss,
     amount: min + Math.floor(Math.random() * (effectiveMax - min + 1))
