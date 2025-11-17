@@ -339,6 +339,11 @@ body {
   font-size: 2.5em;
 }
 
+.boss-name-amount em {
+  color: white;
+  font-style: normal;
+}
+
 .boss-image {
   max-width: 200px;
   height: auto;
