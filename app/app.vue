@@ -30,6 +30,24 @@ const enabledCategories = useState('enabledCategories', () => DEFAULT_CATEGORIES
 const taskHistory = useState('taskHistory', () => []); // New state for history
 
 // --- Helper Functions ---
+function pickWeightedBoss(allBosses) {
+    // Default weight = 1 if not specified, otherwise use the given weight
+    const totalWeight = allBosses.reduce((sum, boss) => 
+        sum + (boss.weight ?? 1), 0
+    );
+
+    let random = Math.random() * totalWeight;
+
+    for (const boss of allBosses) {
+        const weight = boss.weight ?? 1;  // undefined → 1
+        random -= weight;
+        if (random <= 0) {
+            return boss;
+        }
+    }
+
+    return allBosses[allBosses.length - 1]; // floating-point fallback
+}
 
 function generateTask() {
   if (minAmount.value > maxAmount.value) {
@@ -55,7 +73,7 @@ function generateTask() {
     return;
   }
 
-  const randomBoss = allBosses[Math.floor(Math.random() * allBosses.length)]
+  const randomBoss = pickWeightedBoss(allBosses);
   const max = randomBoss.max ?? maxAmount.value;
   const effectiveMax = Math.min(max, maxAmount.value);
   const min = minAmount.value > effectiveMax ? effectiveMax : minAmount.value;
