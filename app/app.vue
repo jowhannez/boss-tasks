@@ -164,6 +164,7 @@ function clearHistory() {
   if (confirm("Are you sure you want to clear the completed task history? This action cannot be undone.")) {
     taskHistory.value = [];
     localStorage.removeItem(LS_KEYS.HISTORY);
+    currentTask.value = null;
   }
 }
 
@@ -196,8 +197,8 @@ function totalCompletedTasks(bossId) {
           <div class="boss-info">
             <img :src="baseURL + currentTask.boss.image" :alt="currentTask.boss.name" class="boss-image" />
             <h3 class="boss-name-amount"><em>{{ currentTask.amount }}x</em> {{ currentTask.boss.name }}</h3>
-            <div v-if="totalCompletedTasks(currentTask.boss.id) > 0" class="completion-count">
-              <p>✅ You have completed this task <strong>{{ totalCompletedTasks(currentTask.boss.id) }}</strong> time<span v-if="totalCompletedTasks(currentTask.boss.id) > 1">s</span>!</p>
+            <div class="completion-count">
+              <div v-if="totalCompletedTasks(currentTask.boss.id) > 0">✅ You have completed this task <strong>{{ totalCompletedTasks(currentTask.boss.id) }}</strong> time<span v-if="totalCompletedTasks(currentTask.boss.id) > 1">s</span>!</div>
             </div>
           </div>
         </div>
@@ -257,7 +258,7 @@ function totalCompletedTasks(bossId) {
     <div v-if="taskHistory.length" class="history-section">
       <h2 class="history-title">📜 Completed Task History ({{ taskHistory.length }} total)</h2>
       <ul class="history-list">
-        <li v-for="task in taskHistory"  class="history-item">
+        <li v-for="task in taskHistory"  class="history-item" :key="task[0] + '-' + task[2]">
           <span class="history-amount">{{ task[1] }}x</span>
           <span class="history-boss">{{ bosses.find(category => category.bosses.some(boss => boss.id === task[0])).bosses.find(boss => boss.id === task[0]).name }}</span>
           <span class="history-date">({{ formatCompletionDate(task[2]) }})</span>
@@ -314,6 +315,7 @@ body {
   margin-bottom: 30px;
   border-bottom: 2px solid var(--accent-dark);
   padding-bottom: 10px;
+  margin-top: 0;
 }
 
 .task-output {
@@ -344,7 +346,7 @@ body {
 
 .boss-name-amount {
   color: var(--result-text);
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .boss-name-amount em {
@@ -352,8 +354,9 @@ body {
   font-style: normal;
 }
 
-.completion-count p {
-  margin: 0;
+.completion-count {
+  height: 21px;
+  margin: 0 0 10px;
 }
 
 .boss-image {
@@ -418,6 +421,10 @@ body {
   border-radius: 10px;
   border: 2px solid var(--accent-dark);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.panel-title {
+  margin-top: 0;
 }
 
 .form-group {
