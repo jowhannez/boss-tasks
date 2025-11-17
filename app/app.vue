@@ -342,9 +342,7 @@ body {
 .boss-image {
   max-width: 200px;
   height: auto;
-  border: 3px solid var(--accent-dark);
   border-radius: 5px;
-  background-color: white;
   padding: 5px;
   object-fit: contain;
 }
