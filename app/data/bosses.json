@@ -263,7 +263,8 @@
             {
                 "id": 47,
                 "name": "The Gauntlet",
-                "image": "/images/Corrupted_Hunllef.png"
+                "image": "/images/Corrupted_Hunllef.png",
+                "max": 10
             },
             {
                 "id": 48,
