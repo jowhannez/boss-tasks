@@ -164,6 +164,13 @@ function setupWatchers() {
   }, { deep: true });
 }
 
+function clearHistory() {
+  if (confirm("Are you sure you want to clear the completed task history? This action cannot be undone.")) {
+    taskHistory.value = [];
+    localStorage.removeItem(LS_KEYS.HISTORY);
+  }
+}
+
 // --- Lifecycle Hook ---
 onMounted(() => {
   loadState();
@@ -240,6 +247,7 @@ function formatCompletionDate(timestamp) {
             </div>
           </div>
         </fieldset>
+        <button @click="clearHistory" class="clear-history-btn">Clear history</button>
       </div>
     </div>
 
@@ -462,6 +470,18 @@ body {
 
 .category-checkbox {
   accent-color: var(--text-dark);
+}
+
+.clear-history-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: var(--accent-red);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* --- Responsive adjustments --- */
