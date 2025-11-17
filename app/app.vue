@@ -60,8 +60,7 @@ function generateTask() {
   const effectiveMax = Math.min(max, maxAmount.value);
   const min = minAmount.value > effectiveMax ? effectiveMax : minAmount.value;
 
-  if (randomBoss.id === currentTask.value?.boss.id) {
-    // Prevent same boss consecutively
+  if (Number(randomBoss.id) === Number(currentTask.value?.boss.id)) {
     return generateTask();
   }
 
@@ -84,10 +83,7 @@ function completeTask() {
   // 1. Add current task to history with completion date
   taskHistory.value.unshift([currentTask.value.boss.id, currentTask.value.amount, Date.now()]); // Add to the start of the array
 
-  // 2. Clear current task
-  currentTask.value = null;
-
-  // 3. Generate a new task
+  // 2. Generate a new task
   generateTask();
 }
 
@@ -183,6 +179,10 @@ function formatCompletionDate(timestamp) {
   const date = new Date(timestamp);
   return date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
+
+function totalCompletedTasks(bossId) {
+  return taskHistory.value.filter(task => task[0] === bossId).length;
+}
 </script>
 
 <template>
@@ -192,10 +192,13 @@ function formatCompletionDate(timestamp) {
         <h1 class="main-title">Boss Task Generator</h1>
 
         <div v-if="currentTask" class="task-card">
-          <h2 class="task-title">🔥 Your Next Challenge:</h2>
+          <h2 class="task-title">Your Next Challenge:</h2>
           <div class="boss-info">
             <img :src="baseURL + currentTask.boss.image" :alt="currentTask.boss.name" class="boss-image" />
             <h3 class="boss-name-amount"><em>{{ currentTask.amount }}x</em> {{ currentTask.boss.name }}</h3>
+            <div v-if="totalCompletedTasks(currentTask.boss.id) > 0" class="completion-count">
+              <p>✅ You have completed this task <strong>{{ totalCompletedTasks(currentTask.boss.id) }}</strong> time<span v-if="totalCompletedTasks(currentTask.boss.id) > 1">s</span>!</p>
+            </div>
           </div>
         </div>
 
@@ -349,9 +352,13 @@ body {
   font-style: normal;
 }
 
+.completion-count p {
+  margin: 0;
+}
+
 .boss-image {
   max-width: 200px;
-  height: auto;
+  height: 300px !important;
   border-radius: 5px;
   padding: 5px;
   object-fit: contain;
