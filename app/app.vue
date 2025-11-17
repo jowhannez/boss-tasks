@@ -1,6 +1,8 @@
 <script setup>
 import { onMounted, watch } from 'vue';
 
+const baseURL = useRuntimeConfig().app.baseURL
+
 // --- Local Storage Keys ---
 const LS_KEYS = {
   MIN_AMOUNT: 'bossGenMinAmount',
@@ -30,6 +32,12 @@ const taskHistory = useState('taskHistory', () => []); // New state for history
 // --- Helper Functions ---
 
 function generateTask() {
+  if (minAmount.value > maxAmount.value) {
+    alert("Minimum amount cannot be greater than maximum amount!");
+    minAmount.value = maxAmount.value;
+    return;
+  }
+
   const filteredBosses = bosses.value.filter(category =>
     enabledCategories.value.includes(category.category)
   )
@@ -177,7 +185,7 @@ function formatCompletionDate(isoString) {
         <div v-if="currentTask" class="task-card">
           <h2 class="task-title">🔥 Your Next Challenge:</h2>
           <div class="boss-info">
-            <img :src="currentTask.boss.image" :alt="currentTask.boss.name" class="boss-image" />
+            <img :src="baseURL + currentTask.boss.image" :alt="currentTask.boss.name" class="boss-image" />
             <h3 class="boss-name-amount"><em>{{ currentTask.amount }}x</em> {{ currentTask.boss.name }}</h3>
           </div>
         </div>

@@ -5,103 +5,103 @@
             {
                 "id": 1,
                 "name": "Scurrius",
-                "image": "images/Scurrius.png"
+                "image": "/images/Scurrius.png"
             },
             {
                 "id": 2,
                 "name": "Barrows brothers",
-                "image": "images/Dharok_the_Wretched.png"
+                "image": "/images/Dharok_the_Wretched.png"
             },
             {
                 "id": 3,
                 "name": "Giant Mole",
-                "image": "images/Giant_Mole.png"
+                "image": "/images/Giant_Mole.png"
             },
             {
                 "id": 4,
                 "name": "Deranged Archaeologist",
-                "image": "images/Deranged_archaeologist.png"
+                "image": "/images/Deranged_archaeologist.png"
             },
             {
                 "id": 5,
                 "name": "Dagannoth Supreme",
-                "image": "images/Dagannoth_Supreme.png",
+                "image": "/images/Dagannoth_Supreme.png",
                 "weight": 0.333
             },
             {
                 "id": 6,
                 "name": "Dagannoth Rex",
-                "image": "images/Dagannoth_Rex.png",
+                "image": "/images/Dagannoth_Rex.png",
                 "weight": 0.333
             },
             {
                 "id": 7,
                 "name": "Dagannoth Prime",
-                "image": "images/Dagannoth_Prime.png",
+                "image": "/images/Dagannoth_Prime.png",
                 "weight": 0.333
             },
             {
                 "id": 8,
                 "name": "Sarachnis",
-                "image": "images/Sarachnis.png"
+                "image": "/images/Sarachnis.png"
             },
             {
                 "id": 9,
                 "name": "Blood Moon",
-                "image": "images/Blood_Moon.png",
+                "image": "/images/Blood_Moon.png",
                 "weight": 0.333
             },
             {
                 "id": 10,
                 "name": "Blue Moon",
-                "image": "images/Blue_Moon.png",
+                "image": "/images/Blue_Moon.png",
                 "weight": 0.333
             },
             {
                 "id": 11,   
                 "name": "Eclipse Moon",
-                "image": "images/Eclipse_Moon.png",
+                "image": "/images/Eclipse_Moon.png",
                 "weight": 0.333
             },
             {
                 "id": 12,
                 "name": "Kalphite Queen",
-                "image": "images/Kalphite_Queen.png"
+                "image": "/images/Kalphite_Queen.png"
             },
             {
                 "id": 13,
                 "name": "Kree'arra",
-                "image": "images/Kree'arra.png"
+                "image": "/images/Kree'arra.png"
             },
             {
                 "id": 14,
                 "name": "Commander Zilyana",
-                "image": "images/Commander_Zilyana.png"
+                "image": "/images/Commander_Zilyana.png"
             },
             {
                 "id": 15,
                 "name": "General Graardor",
-                "image": "images/General_Graardor.png"
+                "image": "/images/General_Graardor.png"
             },
             {
                 "id": 16,
                 "name": "K'ril Tsutsaroth",
-                "image": "images/K'ril_Tsutsaroth.png"
+                "image": "/images/K'ril_Tsutsaroth.png"
             },
             {
                 "id": 17,
                 "name": "The Hueycoatl",
-                "image": "images/The_Hueycoatl.png"
+                "image": "/images/The_Hueycoatl.png"
             },
             {
                 "id": 18,
                 "name": "Corporeal Beast",
-                "image": "images/Corporeal_Beast.png"
+                "image": "/images/Corporeal_Beast.png"
             },
             {
                 "id": 19,
                 "name": "Nex",
-                "image": "images/Nex.png"
+                "image": "/images/Nex.png"
             }
         ]
     },
@@ -111,42 +111,42 @@
             {
                 "id": 20,
                 "name": "Chaos Fanatic",
-                "image": "images/Chaos_Fanatic.png"
+                "image": "/images/Chaos_Fanatic.png"
             },
             {
                 "id": 21,
                 "name": "Crazy Archaeologist",
-                "image": "images/Crazy_archaeologist.png"
+                "image": "/images/Crazy_archaeologist.png"
             },
             {
                 "id": 22,
                 "name": "Scorpia",
-                "image": "images/Scorpia.png"
+                "image": "/images/Scorpia.png"
             },
             {
                 "id": 23,
                 "name": "King Black Dragon",
-                "image": "images/King_Black_Dragon.png"
+                "image": "/images/King_Black_Dragon.png"
             },
             {
                 "id": 24,
                 "name": "Chaos Elemental",
-                "image": "images/Chaos_Elemental.png"
+                "image": "/images/Chaos_Elemental.png"
             },
             {
                 "id": 25,
                 "name": "Calvar'ion / Vet'ion",
-                "image": "images/Calvar'ion.png"
+                "image": "/images/Calvar'ion.png"
             },
             {
                 "id": 26,
                 "name": "Spindel / Venenatis",
-                "image": "images/Spindel.png"
+                "image": "/images/Spindel.png"
             },
             {
                 "id": 27,
                 "name": "Artio / Callisto",
-                "image": "images/Artio.png"
+                "image": "/images/Artio.png"
             }
         ]
     },
@@ -156,52 +156,52 @@
             {
                 "id": 28,
                 "name": "Obor",
-                "image": "images/Obor.png"
+                "image": "/images/Obor.png"
             },
             {
                 "id": 29,
                 "name": "Bryophyta",
-                "image": "images/Bryophyta.png"
+                "image": "/images/Bryophyta.png"
             },
             {
                 "id": 30,
                 "name": "Amoxliatl",
-                "image": "images/Amoxliatl.png"
+                "image": "/images/Amoxliatl.png"
             },
             {
                 "id": 31,
                 "name": "Royal Titans",
-                "image": "images/Branda_the_Fire_Queen.png"
+                "image": "/images/Branda_the_Fire_Queen.png"
             },
             {
                 "id": 32,
                 "name": "Doom of Mokhaiotl",
-                "image": "images/Doom_of_Mokhaiotl.png"
+                "image": "/images/Doom_of_Mokhaiotl.png"
             },
             {
                 "id": 32,
                 "name": "Zulrah",
-                "image": "images/Zulrah.png"
+                "image": "/images/Zulrah.png"
             },
             {
                 "id": 32,
                 "name": "Vorkath",
-                "image": "images/Vorkath.png"
+                "image": "/images/Vorkath.png"
             },
             {
                 "id": 32,
                 "name": "Phantom Muspah",
-                "image": "images/Phantom_Muspah.png"
+                "image": "/images/Phantom_Muspah.png"
             },
             {
                 "id": 32,
                 "name": "The Nightmare / Phosani's Nightmare",
-                "image": "images/The_Nightmare.png"
+                "image": "/images/The_Nightmare.png"
             },
             {
                 "id": 32,
                 "name": "Yama",
-                "image": "images/Yama.png"
+                "image": "/images/Yama.png"
             }
         ]
     },
@@ -211,22 +211,22 @@
             {
                 "id": 33,
                 "name": "Duke Sucellus",
-                "image": "images/Duke_Sucellus.png"
+                "image": "/images/Duke_Sucellus.png"
             },
             {
                 "id": 34,
                 "name": "The Leviathan",
-                "image": "images/The_Leviathan.png"
+                "image": "/images/The_Leviathan.png"
             },
             {
                 "id": 35,
                 "name": "The Whisperer",
-                "image": "images/The_Whisperer.png"
+                "image": "/images/The_Whisperer.png"
             },
             {
                 "id": 36,
                 "name": "Vardorvis",
-                "image": "images/Vardorvis.png"
+                "image": "/images/Vardorvis.png"
             }
         ]
     },
@@ -236,37 +236,37 @@
             {
                 "id": 37,
                 "name": "Grotesque Guardians",
-                "image": "images/Dawn.png"
+                "image": "/images/Dawn.png"
             },
             {
                 "id": 38,
                 "name": "Abyssal Sire",
-                "image": "images/Abyssal_Sire.png"
+                "image": "/images/Abyssal_Sire.png"
             },
             {
                 "id": 39,
                 "name": "Kraken",
-                "image": "images/Cave_kraken.png"
+                "image": "/images/Cave_kraken.png"
             },
             {
                 "id": 40,
                 "name": "Cerberus",
-                "image": "images/Cerberus.png"
+                "image": "/images/Cerberus.png"
             },
             {
                 "id": 41,
                 "name": "Araxxor",
-                "image": "images/Araxxor.png"
+                "image": "/images/Araxxor.png"
             },
             {
                 "id": 42,
                 "name": "Thermonuclear smoke devil",
-                "image": "images/Thermonuclear_Smoke_Devil.png"
+                "image": "/images/Thermonuclear_Smoke_Devil.png"
             },
             {
                 "id": 43,
                 "name": "Alchemical Hydra",
-                "image": "images/Alchemical_Hydra.png"
+                "image": "/images/Alchemical_Hydra.png"
             }
         ]
     },
@@ -276,24 +276,24 @@
             {
                 "id": 44,
                 "name": "The Gauntlet",
-                "image": "images/Corrupted_Hunllef.png"
+                "image": "/images/Corrupted_Hunllef.png"
             },
             {
                 "id": 45,
                 "name": "TzTok-Jad",
-                "image": "images/TzTok-Jad.png",
+                "image": "/images/TzTok-Jad.png",
                 "max": 1
             },
             {
                 "id": 46,
                 "name": "TzKal-Zuk",
-                "image": "images/TzKal-Zuk.png",
+                "image": "/images/TzKal-Zuk.png",
                 "max": 1
             },
             {
                 "id": 47,
                 "name": "Sol Heredit",
-                "image": "images/Sol_Heredit.png",
+                "image": "/images/Sol_Heredit.png",
                 "max": 1
             }
         ]
@@ -304,17 +304,17 @@
             {
                 "id": 48,
                 "name": "Tempoross",
-                "image": "images/Tempoross.png"
+                "image": "/images/Tempoross.png"
             },
             {
                 "id": 49,
                 "name": "Wintertodt",
-                "image": "images/Wintertodt.gif"
+                "image": "/images/Wintertodt.gif"
             },
             {
                 "id": 50,
                 "name": "Zalcano",
-                "image": "images/Zalcano.png"
+                "image": "/images/Zalcano.png"
             }
         ]
     },
@@ -324,19 +324,19 @@
             {
                 "id": 51,
                 "name": "Chambers of Xeric",
-                "image": "images/Great_olm.png",
+                "image": "/images/Great_olm.png",
                 "max": 1
             },
             {
                 "id": 52,
                 "name": "Theatre of Blood",
-                "image": "images/Verzik_Vitur.png",
+                "image": "/images/Verzik_Vitur.png",
                 "max": 1
             },
             {
                 "id": 53,
                 "name": "Tombs of Amascut",
-                "image": "images/Tumeken's_Warden.png",
+                "image": "/images/Tumeken's_Warden.png",
                 "max": 1
             }
         ]
