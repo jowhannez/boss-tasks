@@ -7,7 +7,7 @@ const LS_KEYS = {
   MAX_AMOUNT: 'bossGenMaxAmount',
   CATEGORIES: 'bossGenEnabledCategories',
   CURRENT_TASK: 'bossGenCurrentTask',
-  HISTORY: 'bossGenTaskHistory', // New key for history
+  HISTORY: 'bossGenTaskHistory', 
 }
 
 const { data: bosses } = await useAsyncData('bosses', () =>
