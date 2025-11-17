@@ -82,11 +82,7 @@ function completeTask() {
   if (!currentTask.value) return;
 
   // 1. Add current task to history with completion date
-  const completedEntry = {
-    ...currentTask.value,
-    completedAt: new Date().toISOString()
-  };
-  taskHistory.value.unshift(completedEntry); // Add to the start of the array
+  taskHistory.value.unshift([currentTask.value.boss.id, currentTask.value.amount, Date.now()]); // Add to the start of the array
 
   // 2. Clear current task
   currentTask.value = null;
@@ -175,8 +171,9 @@ onMounted(() => {
 })
 
 // Function to format ISO date to readable string
-function formatCompletionDate(isoString) {
-  const date = new Date(isoString);
+function formatCompletionDate(timestamp) {
+  // It handles both ISO string and UNIX millisecond number automatically
+  const date = new Date(timestamp);
   return date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
 </script>
@@ -249,10 +246,10 @@ function formatCompletionDate(isoString) {
     <div v-if="taskHistory.length" class="history-section">
       <h2 class="history-title">📜 Completed Task History ({{ taskHistory.length }} total)</h2>
       <ul class="history-list">
-        <li v-for="task in taskHistory" :key="task.completedAt + task.boss.name" class="history-item">
-          <span class="history-amount">{{ task.amount }}x</span>
-          <span class="history-boss">{{ task.boss.name }}</span>
-          <span class="history-date">({{ formatCompletionDate(task.completedAt) }})</span>
+        <li v-for="task in taskHistory"  class="history-item">
+          <span class="history-amount">{{ task[1] }}x</span>
+          <span class="history-boss">{{ bosses.find(category => category.bosses.some(boss => boss.id === task[0])).bosses.find(boss => boss.id === task[0]).name }}</span>
+          <span class="history-date">({{ formatCompletionDate(task[2]) }})</span>
         </li>
       </ul>
     </div>
